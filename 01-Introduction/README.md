@@ -12,7 +12,7 @@
 
 ###Single Thread or Multi-threaded
 
-#Why Use NodeJS
+# Why Use NodeJS
 
 - Non-blocking IO
 - One language on frontend and backend
@@ -27,4 +27,4 @@
 
 
 
-#How it works under the hood
+# How it works under the hood
