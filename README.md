@@ -7,3 +7,11 @@ In this collaborative repository we will go deep into NodeJS concepts in depth a
 What is NodeJS?  
 Why to use nodejs  
 How NodeJS works under the hood  
+
+## Synchronous vs Asynchronous Communication
+
+## Callbacks
+
+## Event Loop
+
+## Libuv
