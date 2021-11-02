@@ -8,6 +8,9 @@ What is NodeJS?
 Why to use nodejs  
 How NodeJS works under the hood  
 
+
+## Event Emitter
+
 ## Synchronous vs Asynchronous Communication
 
 ## Callbacks
@@ -15,3 +18,4 @@ How NodeJS works under the hood
 ## Event Loop
 
 ## Libuv
+
