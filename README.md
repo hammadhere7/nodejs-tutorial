@@ -62,12 +62,69 @@ function getUser(){
 ```
 
 ```html
-When we add user and then get user its display this result
-
 addUser('user4');
 getUser();
-
 Output:    [ 'user1', 'user2', 'user3' ]
+```
+Above mentioned example is about non callbac when we add user and get the user its not displaying 
+new added user because add user may take some process time and return invalid result this problem 
+can be solved with the help of callbacks.
+
+```javascript
+function addUserCallback(username,callback) {
+  setTimeout(function(){
+      users.push(username);
+      callback();
+  },200)
+}
+
+addUserCallback('user4',getUser)
+Output:    [ 'user1', 'user2', 'user3','user4' ]
+```
+> Using lot of callbacks in your code its creates Callback Hell in modren javascript this problem can be resolved by using Promises, Async/AWait
+
+- Callback (The Old Way)
+- Promises (The New Way)
+- Async/Await (The Newest Way)
+
+### Callback Hell Example:
+```javascript
+someAsyncThing(params, (err, res) => {
+  if (err) throw err;
+  doSomethingAsyncWithResult(res, (err2, res2) => {
+    if (err2) throw err2;
+    someAsyncWithThatResult(res2, (err3, res3) => {
+      if (err3) throw err3;
+      anotherCallWithResult(res3, (err4, res4) => {
+        if (err4) throw err4;
+        return res4;
+      });
+    });
+  });
+});
+```
+
+
+### Promises Example:
+```javascript
+let myPromise = new Promise(function(myResolve, myReject) {
+// "Producing Code" (May take some time)
+
+  myResolve(); // when successful
+  myReject();  // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then(
+  function(value) { /* code if successful */ },
+  function(error) { /* code if some error */ }
+);
+```
+
+### Async/Await Example:
+```javascript
+const value = await someAsyncFunction();
+console.log(value);
 ```
 
 ## Event Loop
