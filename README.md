@@ -19,8 +19,10 @@ How NodeJS works under the hood
 
 ## Libuv
 
-## Modules, Exports and Require 
+## NodeJS Module System (Modules, Exports and Require)-Hamza 
 
-## HTTP Protocol
+## NPM (Khalil)
 
-## Web Server
+## HTTP Protocol-Samad
+
+## Web Server-Hammad
