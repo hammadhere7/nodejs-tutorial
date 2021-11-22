@@ -134,3 +134,10 @@ console.log(value);
 	https://www.educative.io/edpresso/what-is-an-event-loop-in-javascript
     
 ## Libuv
+libuv is a C library originally written for Node.js to abstract non-blocking I/O operations. 
+An event-driven asynchronous I/O model is integrated.
+It allows the CPU and other resources to be used simultaneously while still performing I/O operations, thereby resulting in efficient use of resources and network.
+It facilitates an event-driven approach wherein I/O and other activities are performed using callback-based notifications.
+Example: If a program is querying the database, the CPU sits idle until the query is processed and the program stays at a halt, thereby causing wastage of system resources. To prevent this, libuv is used in Node.js which facilitates a non-blocking I/O.
+It also has mechanisms to handle services like File System, DNS, network, child processes, pipes, signal handling, polling, and streaming. 
+To perform blocking operations that can’t be done asynchronously at the OS level, libuv also includes a thread pool to distribute CPU loads.
