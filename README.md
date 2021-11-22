@@ -129,8 +129,8 @@ console.log(value);
 
 ## Event Loop
   ### References
-		- Javascript event loop | Every Javascript developer must know!
-		- What the heck is the event loop anyway? | Philip Roberts | JSConf EU
-		- https://www.educative.io/edpresso/what-is-an-event-loop-in-javascript
+	Javascript event loop | Every Javascript developer must know!
+	What the heck is the event loop anyway? | Philip Roberts | JSConf EU
+	https://www.educative.io/edpresso/what-is-an-event-loop-in-javascript
     
 ## Libuv
